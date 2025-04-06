@@ -1,11 +1,31 @@
-# Métodos Numéricos 02
+# Numerical Methods II
 
-Este repositório contém todas as implementações realizadas ao longo da disciplina de Métodos Numéricos II. Aqui serão armazenados os códigos e relatórios baseados nos conteúdos apresentados em aula.
+This repository contains my implementations and experiments performed during the course of **Numerical Methods II**. Each report is organized in its own folder, containing the source codes, tests, and annotations.
 
-A princípio, todas as implementações serão feitas em **Java**, mas eventualmente podem surgir versões em **C++** ou **Python**, dependendo da necessidade ou curiosidade para testar diferentes abordagens.
+The main language used is Java, but other languages such as C++ or Python may appear as the content of the course evolves.
 
-## Objetivos
+## Goals
 
-- Implementar os algoritmos estudados em aula
-- Analisar resultados e validar métodos numéricos
-- Explorar diferentes linguagens e paradigmas de programação
+- Implement the algorithms studied in class
+- Analyze results and validate numerical methods
+- Explore different programming languages and paradigms
+
+## Repository Structure
+
+```text
+numerical-methods-II/
+├── relatorios/
+│   ├── relatorio01/
+│   │   └── src/              # Java source files
+│   ├── relatorio02/
+│   └── ...
+├── bin/                      # Compiled .class files organized by report
+│   ├── relatorio01/
+│   └── relatorio02/
+├── compiler.sh               # Build and run automation script
+├── .gitignore
+└── README.md
+```
+
+## How to Compile and Run
+This repository includes a helper script `compiler.sh` to compile and run Java programs easily.
