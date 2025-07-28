@@ -4,19 +4,19 @@
 # 🚀 COMPILER SCRIPT - NUMERICAL METHODS II
 # ================================================
 # Uso:
-#   ./compiler.sh relatorio01
+#   ./compiler.sh unit01
 # ================================================
 
 # Verifica se o usuário passou o nome do relatório
 if [ -z "$1" ]; then
   echo "❌ Erro: informe o nome do relatório!"
-  echo "Uso: ./compiler.sh relatorio01"
+  echo "Uso: ./compiler.sh unit01"
   exit 1
 fi
 
-# Caminhos com base na estrutura relatorios/relatorioXX
+# Caminhos com base na estrutura 
 REPORT_NAME="$1"
-REPORT_DIR="relatorios/$REPORT_NAME"
+REPORT_DIR="$REPORT_NAME"
 SRC_DIR="$REPORT_DIR/src"
 BIN_DIR="bin/$REPORT_NAME"
 

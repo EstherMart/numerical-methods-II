@@ -14,16 +14,12 @@ The main language used is Java, but other languages such as C++ or Python may ap
 
 ```text
 numerical-methods-II/
-├── relatorios/
-│   ├── relatorio01/
-│   │   └── src/              # Java source files
-│   ├── relatorio02/
-│   └── ...
+├── unitXX/
+│   ├── src/
+│   │   └── implementation.java      # Example
 ├── bin/                      # Compiled .class files organized by report
-│   ├── relatorio01/
-│   └── relatorio02/
+│   ├── unitXX/
 ├── compiler.sh               # Build and run automation script
-├── .gitignore
 └── README.md
 ```
 
@@ -51,12 +47,10 @@ cd path/to/numerical-methods-II
 
 ```bash
 chmod +x compiler.sh
-``` 
-
-3. Run the script with the name of the report as the argument. For example, for relatorio01
-
-```bash
-./compiler.sh relatorio01
 ```
 
-The script will compile the `.java` files located in `relatorio/relatorio01/src/` and store the corresponding `.class` files in `bin/relatorio01/.` It will then execute the main class of the report.
+3. Run the script with the name of the report as the argument. For example, for unit01
+
+```bash
+./compiler.sh unit01
+```
