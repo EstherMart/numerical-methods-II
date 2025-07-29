@@ -5,6 +5,14 @@ import java.util.List;
 import java.util.function.BiFunction;
 
 public class EulerImplicito {
+
+    /**
+     * Método de Euler Implícito, usando aproximação iterativa para resolver:
+     * S_{n+1} = S_n + dt * F(S_{n+1}, t_{n+1})
+     *
+     * A função F depende do próximo estado, por isso uso iterações para encontrar S_{n+1}
+     */
+    
     public static List<Estado> resolver(double[] S0, double t0, double tf, double dt,
             BiFunction<double[], Double, double[]> F) {
         List<Estado> resultados = new ArrayList<>();

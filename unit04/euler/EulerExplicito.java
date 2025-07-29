@@ -5,6 +5,18 @@ import java.util.List;
 import java.util.function.BiFunction;
 
 public class EulerExplicito {
+
+    /**
+     * Implementação do método de Euler Explícito para resolver EDOs
+     *
+     * @param S0 Vetor com as condições iniciais
+     * @param t0 Tempo inicial
+     * @param tf Tempo final
+     * @param dt Passo de integração
+     * @param F  Função do sistema (EDO) no formato BiFunction
+     * @return Lista de estados com os valores da solução em cada passo
+     */
+
     public static List<Estado> resolver(double[] S0, double t0, double tf, double dt,
             BiFunction<double[], Double, double[]> F) {
         List<Estado> resultados = new ArrayList<>();
